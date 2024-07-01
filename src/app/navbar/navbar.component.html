@@ -1,0 +1,30 @@
+<div class="language">
+  <img (click)="switchLanguage('de')" src="../../assets/de.png">
+  <img (click)="switchLanguage('en')" src="../../assets/en.png">
+</div>
+<nav id="home">
+  <div class="logo">
+    <img src="./../../assets/logo_sascha_lenz.png" />
+  </div>
+
+  <div class="menuDiv">
+    <a
+      [@slideInFromBottom]="slideInBottom"
+      class="underline-link"
+      href="#about_me"
+      >{{ "NAVBAR.ABOUT_ME" | translate }}</a
+    >
+    <a
+      [@slideInFromBottomTwo]="slideInFromBottomTwo"
+      class="underline-link"
+      href="#mySkills"
+      >{{ "NAVBAR.SKILLS" | translate }}</a
+    >
+    <a
+      [@slideInFromBottomThree]="slideInFromBottomThree"
+      class="underline-link"
+      href="#portfolio"
+      >{{ "NAVBAR.PORTFOLIO" | translate }}</a
+    >
+  </div>
+</nav>

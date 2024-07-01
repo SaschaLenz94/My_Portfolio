@@ -1,0 +1,281 @@
+.window {
+  height: calc(100vh - 170px);
+  max-width: 100%;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffcf3;
+}
+
+h1 {
+  height: 157px;
+  top: 204px;
+  left: 257px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Syne;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 128px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  margin: 0;
+  z-index: 800;
+}
+
+h2 {
+  height: 157px;
+  top: 324px;
+  left: 209px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Syne;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 128px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  margin: 0;
+  z-index: 800;
+}
+.barDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 800;
+}
+
+.bar {
+  width: 628px;
+  height: 0px;
+  top: 502px;
+  left: 275px;
+  gap: 0px;
+  opacity: 0px;
+  border: 2px solid #000000;
+  z-index: 800;
+}
+h3 {
+  margin: 0;
+  font-family: Overpass;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: #00bc8f;
+}
+
+.bottom {
+  padding: 0px 100px 0px 100px;
+  background-color: #fffcf3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSection {
+  font-family: Overpass;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: left;
+  transform: rotate(-90deg);
+}
+
+.rightSection {
+  gap: 6px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin: 0;
+  font-family: Overpass;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.025em;
+  text-align: left;
+}
+
+.rightSection img {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  opacity: 0; /* Anfangs unsichtbar machen */
+  animation: slideAnimation 2s infinite; /* 2s Gesamtzeit, kann angepasst werden */
+}
+@media (max-width: 1260px) {
+  .bottom{
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .window {
+    height: calc(100vh - 140px);
+  }
+  h1 {
+    height: 70px;
+    font-size: 80px;
+  }
+  h2 {
+    height: 70px;
+    font-size: 90px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .barDiv {
+    margin-top: 40px;
+  }
+  .bar {
+    width: 428px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bottom {
+    padding: 0px 30px 0px 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    height: 70px;
+    font-size: 70px;
+  }
+  h2 {
+    height: 70px;
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .barDiv {
+    margin-top: 40px;
+  }
+  .bar {
+    width: 200px;
+  }
+}
+@media(max-width:620px){
+  .bottom {
+    padding: 0px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    height: 70px;
+    font-size: 55px;
+  }
+  h2 {
+    height: 70px;
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .barDiv {
+    margin-top: 40px;
+  }
+  .bar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    height: 50px;
+    font-size: 50px;
+  }
+  h2 {
+    height: 50px;
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .barDiv {
+    margin-top: 40px;
+  }
+  .bar {
+    width: 150px;
+    border: 1px solid #000000;
+  }
+ 
+
+  .leftSection {
+    font-family: Overpass;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 120px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  h1 {
+    height: 50px;
+    font-size: 40px;
+  }
+  h2 {
+    height: 50px;
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .barDiv {
+    margin-top: 40px;
+  }
+  .bar {
+    width: 150px;
+    border: 1px solid #000000;
+  }
+
+  .leftSection {
+    font-family: Overpass;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 120px;
+  }
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 1; /* Start: unsichtbar */
+    transform: translateY(
+      -100%
+    ); /* Startposition oben außerhalb des Containers */
+  }
+  
+
+  100% {
+    opacity: 1; /* Ende: unsichtbar */
+    transform: translateY(
+      200%
+    ); /* Bild weiter nach unten bewegen, außerhalb des Containers */
+  }
+}

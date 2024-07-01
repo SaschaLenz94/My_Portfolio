@@ -1,0 +1,221 @@
+.mainDiv {
+  width: 100%;
+  max-width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  margin: 0;
+  color: #fffcf3;
+  font-family: Overpass;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+
+  a {
+    color: #00bc8f;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+      input[type="checkbox"] {
+        background-color: #00bc8f;
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: Overpass;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  color: #00bc8f;
+}
+
+h2 {
+  font-family: Overpass;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: center;
+  color: #fffcf3;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="name"],
+[type="email"] {
+  width: 100vw;
+  min-width: 300px;
+  max-width: 617px;
+  background-color: black;
+  padding: 15px 25px 15px 25px;
+  border: 0;
+  border: 2px solid black;
+  border-bottom: 2px solid #fffcf3;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    border: 2px solid #fffcf3;
+  }
+}
+
+textarea {
+  width: 600p;
+  max-width: 610px;
+  min-width: 610px;
+  background-color: black;
+  padding: 15px 25px 15px 25px;
+  border: 2px solid black;
+  border-bottom: 2px solid #fffcf3;
+  min-height: 150px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid #fffcf3;
+  }
+}
+
+input[type="checkbox"] {
+  background-color: black;
+  border: 2px solid white;
+}
+
+button {
+  width: Hug (269px) px;
+  height: Hug (68px) px;
+  padding: 20px 60px 20px 60px;
+  gap: 10px;
+  border: 4px 0px 0px 0px;
+  opacity: 0px;
+  border: 4px solid #bbbbbb;
+  color: #bbbbbb;
+  background-color: #000000;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.isInvalid {
+  border: 2px solid !important;
+  border-color: red !important;
+  caret-color: red !important;
+  background-image: url("../../assets/inputFalse.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+}
+
+.isValid {
+  border: 2px solid !important;
+  border-color: green !important;
+  caret-color: green !important;
+  background-image: url("../../assets/inputCheck.svg") !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+  background-color: transparent !important;
+}
+
+.policy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.invalidText {
+  width: 617px+50px;
+  min-width: 617px+50px;
+  color: red;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .invalidText {
+    width: 400px+50px;
+    min-width: 400px+50px;
+  }
+  input[type="name"],
+  [type="email"] {
+    width: 400px;
+  }
+
+  textarea {
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+  .policy-container {
+    width: 300px;
+    height: 88px;
+  }
+}
+
+@media (max-width: 500px) {
+  input[type="name"],
+  [type="email"] {
+    width: 250px;
+    min-width: 250px;
+  }
+  .invalidText {
+    width: 250px+50px;
+    min-width: 250px+50px;
+  }
+  textarea {
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+  }
+}
+
+.successBackground{
+}
+
+.sendmailDiv{
+  background-color: #000000;
+display: none;
+max-height:63px
+}
+.sendmailDiv.success{
+display: block;
+max-height:63px
+}
+
+button.success{
+  display: none;
+}
+
+h4{
+  padding: 20px 0px 20px 6px;
+  font-family: Overpass;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  color: #00bc8f;
+  margin:0;
+}

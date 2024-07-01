@@ -1,0 +1,100 @@
+<div
+  id="contact"
+  class="mainDiv"
+  [ngClass]="{ success: isSubmitted }"
+  ngIf="!isSubmitted"
+>
+  <h1>
+    {{ "CONTACT.FIRST" | translate }}
+  </h1>
+  <h2>
+    {{ "CONTACT.SECOND" | translate }}
+  </h2>
+  <form
+    class="contentContainer"
+    (ngSubmit)="onSubmit(contactForm)"
+    #contactForm="ngForm"
+  >
+    <input
+      [(ngModel)]="contactData.name"
+      #name="ngModel"
+      name="name"
+      minlength="6"
+      type="name"
+      placeholder="Your name"
+      [ngClass]="{
+        'isInvalid': name.invalid && (name.dirty || name.touched),
+        'isValid': !name.invalid && (name.dirty || name.touched),
+      }"
+      pattern="^[a-zA-Z]+ [a-zA-Z]+$"
+      required
+    />
+    @if(!name.valid && name.touched){
+    <span class="invalidText">{{ "CONTACT.REQUIRED1" | translate }}</span>
+    }
+    <input
+      [(ngModel)]="contactData.email"
+      #email="ngModel"
+      type="email"
+      name="email"
+      placeholder="Your email"
+      [ngClass]="{
+        'isInvalid': email.invalid && (email.dirty || email.touched),
+        'isValid': !email.invalid && (email.dirty || email.touched),
+      }"
+      required
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+    />
+    @if(!email.valid && email.touched){
+    <span class="invalidText">{{ "CONTACT.REQUIRED2" | translate }}</span>
+    }
+    <textarea
+      [(ngModel)]="contactData.message"
+      #message="ngModel"
+      type="text"
+      name="message"
+      minlength="8"
+      placeholder="Your message"
+      [ngClass]="{
+        'isInvalid': message.invalid && (message.dirty || message.touched),
+        'isValid': !message.invalid && (message.dirty || message.touched),
+      }"
+      required
+    ></textarea>
+    @if(!message.valid && message.touched){
+    <span class="invalidText">{{ "CONTACT.REQUIRED3" | translate }}</span>
+    }
+    <div class="policy-container">
+      <label class="container">
+        <input
+          #privacyPolicy="ngModel"
+          type="checkbox"
+          name="privacyPolicy"
+          [(ngModel)]="contactData.privacyPolicy"
+          required
+          [ngClass]="{
+            isInvalid:
+              privacyPolicy.invalid &&
+              (privacyPolicy.dirty || privacyPolicy.touched)
+          }"
+        />
+        <p>
+          {{ "CONTACT.POLICY1" | translate
+          }}<a href="privacypolicy">{{ "CONTACT.POLICY2" | translate }}</a>
+          {{ "CONTACT.POLICY3" | translate }}
+        </p>
+      </label>
+      @if (privacyPolicy.invalid && (privacyPolicy.dirty ||
+      privacyPolicy.touched)) {
+      <span class="invalidText">{{ "CONTACT.REQUIRED4" | translate }}</span>
+      }
+    </div>
+    <button [ngClass]="{ success: isSubmitted }" type="submit" [disabled]="contactForm.invalid">
+      {{ "CONTACT.SUBMIT" | translate }}</button
+    >
+    <div class="sendmailDiv"   [ngClass]="{ success: isSubmitted }" ngIf="isSubmitted">
+      <div class="successBackground">
+      <h4>{{ "CONTACT.INFO" | translate }}</h4>
+    </div></div>
+  </form>
+</div>
