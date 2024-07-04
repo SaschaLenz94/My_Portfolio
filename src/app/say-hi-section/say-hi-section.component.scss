@@ -1,9 +1,11 @@
 .mainBarDiv {
   margin-top: -50px;
 }
+
 .diagonal-bar {
   width: 100%;
-  max-width: 1440px;
+  display: flex;
+  justify-content: center; 
   height: 150px;
   background: linear-gradient(
     to right top,
@@ -13,6 +15,21 @@
     transparent 100%
   );
   z-index: 3;
+  box-sizing: border-box;
+}
+
+.bg-container {
+  width: 100%; 
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.width-content {
+  max-width: 1450px; 
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .bottom-bar {
@@ -21,6 +38,7 @@
   width: 100%;
   max-width: 1440px;
   background: #000;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -34,6 +52,7 @@ h1 {
   padding: 0px 100px 0px 100px;
   color: white;
   margin-top: -30px;
+  box-sizing: border-box;
 }
 
 h1:hover {

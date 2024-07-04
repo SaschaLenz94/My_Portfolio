@@ -80,4 +80,10 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
   switchLanguage(lang: string) {
     this.translate.use(lang);
   }
+
+  isMenuOpen: boolean = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

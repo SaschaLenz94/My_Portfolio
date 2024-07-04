@@ -30,9 +30,9 @@
     "CONTACT": {
         "FIRST": "Haben Sie ein zukünftiges Projekt?",
         "SECOND": "Kontaktieren Sie mich und wir können die Ideen besprechen.",
-        "REQUIRED1": "Ihr Name ist erforderlich",
-        "REQUIRED2": "Ihre E-Mail ist erforderlich",
-        "REQUIRED3": "Ihre Nachricht ist leer",
+        "REQUIRED1": "Bitte geben sie Ihr Vor- und Nachname ein",
+        "REQUIRED2": "Bitte geben Sie eine richtige E-Mai ladresse ein",
+        "REQUIRED3": "Ihre Nachricht benötigt mindestens 10 Zeichen",
         "POLICY1": "Ich habe die",
         "POLICY2": "Datenschutzerklärung",
         "POLICY3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",

@@ -1,13 +1,12 @@
 html {
   scroll-behavior: smooth;
+
 }
 body {
   margin: auto;
+  overflow-x: hidden;
   padding: 0;
-  max-width: 1440px;
-  width: 100%;
   background-color: #fffcf3;
-
   box-sizing: border-box;
   user-select: none;
 }

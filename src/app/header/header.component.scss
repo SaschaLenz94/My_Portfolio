@@ -1,6 +1,19 @@
+.window-center {
+  display: flex;
+  justify-content: center;
+}
+.window-width {
+  max-width: 1450px;
+  width: 100%;
+}
+
 .window {
   height: calc(100vh - 170px);
-  max-width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; /* Zentriert das Element */
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
 }
 
 .head {
@@ -12,10 +25,6 @@
 
 h1 {
   height: 157px;
-  top: 204px;
-  left: 257px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Syne;
   font-size: 128px;
   font-weight: 800;
@@ -71,19 +80,22 @@ h3 {
 }
 
 .bottom {
-  padding: 0px 100px 0px 100px;
   background-color: #fffcf3;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1450px;
 }
 
 .leftSection {
   font-family: Overpass;
   font-size: 23px;
   font-weight: 400;
-  line-height: 45px;
   text-align: left;
   transform: rotate(-90deg);
+  padding-left: 90px;
 }
 
 .rightSection {
@@ -93,6 +105,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 40px;
 }
 p {
   margin: 0;
@@ -124,11 +137,6 @@ a {
   opacity: 0; /* Anfangs unsichtbar machen */
   animation: slideAnimation 2s infinite; /* 2s Gesamtzeit, kann angepasst werden */
 }
-@media (max-width: 1260px) {
-  .bottom{
-    padding: 0px 50px 0px 50px;
-  }
-}
 
 @media (max-width: 1100px) {
   .window {
@@ -153,13 +161,9 @@ a {
   }
 }
 
-@media (max-width: 1100px) {
-  .bottom {
-    padding: 0px 30px 0px 30px;
-  }
-}
-
 @media (max-width: 800px) {
+  .window {
+    padding-top: 100px;}
   h1 {
     height: 70px;
     font-size: 70px;
@@ -178,11 +182,7 @@ a {
     width: 200px;
   }
 }
-@media(max-width:620px){
-  .bottom {
-    padding: 0px;
-  }
-}
+
 @media (max-width: 600px) {
   h1 {
     height: 70px;
@@ -223,7 +223,6 @@ a {
     width: 150px;
     border: 1px solid #000000;
   }
- 
 
   .leftSection {
     font-family: Overpass;
@@ -232,7 +231,6 @@ a {
     line-height: 120px;
   }
 }
-
 
 @media (max-width: 420px) {
   h1 {
@@ -270,7 +268,6 @@ a {
       -100%
     ); /* Startposition oben außerhalb des Containers */
   }
-  
 
   100% {
     opacity: 1; /* Ende: unsichtbar */

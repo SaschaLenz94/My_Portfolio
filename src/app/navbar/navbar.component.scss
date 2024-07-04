@@ -10,7 +10,18 @@
     cursor: pointer;
   }
 }
-
+.window-center {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  padding: 0px 100px 00px 100px;
+  max-width: 1450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav {
   padding: 0px 100px 30px 100px;
   display: flex;
@@ -48,6 +59,19 @@ nav {
     color: #00bc8f;
   }
 }
+.handy-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+  margin: 15px;
+  font-family: Overpass;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+}
 
 .underline-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -67,13 +91,72 @@ nav {
   left: 0;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100px); /* Direkt unterhalb des Burger-Menü-Buttons */
+  right: 0;
+  transform-origin: top right; /* Ursprung für die Transformation */
+  transform: scaleY(0); /* Skalierung auf 0 in der Y-Achse für Animation */
+  opacity: 1;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.menu-container.open {
+  transform: scaleY(1); /* Skalierung auf 1, um das Menü zu öffnen */
+  opacity: 1;
+  visibility: visible;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: transform 0.4s ease;
+}
+
+
+
+.burger-menu.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 @media (max-width: 1200px) {
 }
 
 @media (max-width: 1100px) {
+  .content {
+    padding: 0px 30px 00px 30px;}
   nav {
     padding: 0px 20px 0px 20px;
   }
+}
+@media (max-width: 1000px) {
+  .burger-menu {
+    display: block;
+  }
+  .menuDiv {
+    display: none;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -83,9 +166,6 @@ nav {
 }
 
 @media (max-width: 640px) {
-  .logo {
-    display: none;
-  }
   nav {
     justify-content: center;
   }
@@ -106,6 +186,9 @@ nav {
   }
 }
 @media (max-width: 370px) {
+  .menu-container{
+    top: 130px;
+  }
   nav {
     padding: 30px 8px 30px 8px;
   }

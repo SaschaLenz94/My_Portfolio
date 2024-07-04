@@ -1,3 +1,5 @@
+<div class="bg-container">
+  <div class="width-content">
 <div class="arrow">
   <a href="#home"
     ><img src="../../../../assets/arrows/arrowTop2.svg" alt=""
@@ -11,14 +13,16 @@
     <div class="logos">
       <a href="https://github.com/SaschaLenz94" target="_blank">
       <img src="../../../../assets/footer/cat.svg" alt="" /></a>
-      <a href="" target="_blank"><img src="../../../../assets/footer/letter.svg" alt="" /></a>
+      <a href="mailto:contact@sascha-lenz.org" target="_blank"><img src="../../../../assets/footer/letter.svg" alt="" /></a>
       <a href="https://www.linkedin.com/in/sascha-lenz-4356802b8/" target="_blank"><img src="../../../../assets/footer/linkin.svg" alt="" /></a>
     </div>
     <div>
       <span
-        ><a href="privacypolicy" class="underline-link">{{ "FOOTER.FIRST" | translate }}</a>
-        <a href="imprint" class="underline-link">{{ "FOOTER.SECOND" | translate }}</a></span
+        ><a routerlink="/privacypolicy" href="/privacypolicy" class="underline-link">{{ "FOOTER.FIRST" | translate }}</a>
+        <a routerlink="/imprint" href="/imprint" class="underline-link">{{ "FOOTER.SECOND" | translate }}</a></span
       >
     </div>
   </div>
+</div>
+</div>
 </div>

@@ -6,6 +6,19 @@
   flex-direction: column;
   justify-content: center;
 }
+.bg-container {
+  width: 100%; 
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.width-content {
+  max-width: 1450px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
 p {
   margin: 0;
   color: #fffcf3;
