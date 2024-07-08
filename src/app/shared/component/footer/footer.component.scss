@@ -116,14 +116,6 @@ span {
 }
 
 @media (max-width: 830px) {
-  .arrow {
-    > a img {
-      padding-right: 30px;
-    }
-  }
-}
-
-@media (max-width: 830px) {
   p {
     font-size: 13px;
   }
@@ -133,15 +125,11 @@ span {
   .mainDiv {
     flex-direction: column-reverse;
     gap: 0px;
-    padding:0 30px;
+    padding:20px 30px;
   }
   p{
         line-height: 0px;
         margin-top: 0px;
   }
-  .arrow {
-    > a img {
-      padding-right: 10px;
-    }
-  }
+  
 }

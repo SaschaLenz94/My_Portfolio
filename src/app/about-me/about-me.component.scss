@@ -1,20 +1,19 @@
-.window-center{
+.window-center {
   display: flex;
   justify-content: center;
 }
-.window-width{
+.window-width {
   max-width: 1450px;
   width: 100%;
 }
 
-
-.content{
-  height: calc(100vh - 170px);
-max-width: 1440px;
-margin: 0 auto; /* Zentriert das Element */
-display: flex;
-flex-direction: column;
-justify-content: center;}
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 h1 {
   padding: 30px 100px 30px 100px;
@@ -127,13 +126,12 @@ a {
     justify-content: center;
   }
   h2 {
-
     font-size: 90px;
   }
   h3 {
     font-size: 30px;
   }
-  p{
+  p {
     max-width: 100vw;
   }
   .barDiv {
@@ -190,13 +188,13 @@ a {
     width: 150px;
     border: 1px solid #000000;
   }
-  .buttonPosition{
+  .buttonPosition {
     display: none;
   }
 }
 
 @media (max-width: 420px) {
-h1{
-  font-size:35px;
-}
+  h1 {
+    font-size: 35px;
+  }
 }

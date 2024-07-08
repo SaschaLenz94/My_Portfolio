@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .bg-container {
-  width: 100%; 
+  width: 100%;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -15,8 +15,8 @@
 }
 
 .width-content {
-  max-width: 1450px; 
-  width: 100%; 
+  max-width: 1450px;
+  width: 100%;
   box-sizing: border-box;
 }
 p {
@@ -71,6 +71,7 @@ h2 {
 
 input[type="name"],
 [type="email"] {
+  font-family: Overpass;
   width: 100vw;
   min-width: 300px;
   max-width: 617px;
@@ -87,6 +88,7 @@ input[type="name"],
 }
 
 textarea {
+  font-family: Overpass;
   width: 600p;
   max-width: 610px;
   min-width: 610px;
@@ -112,15 +114,25 @@ button {
   height: Hug (68px) px;
   padding: 20px 60px 20px 60px;
   gap: 10px;
+  font-weight:800;
   border: 4px 0px 0px 0px;
-  opacity: 0px;
+  opacity: 1;
   border: 4px solid #bbbbbb;
   color: #bbbbbb;
   background-color: #000000;
   cursor: pointer;
-  &:disabled {
-    opacity: 0.1;
+  :hover {
+    background-color: #00bc8f !important;
   }
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+button:not(:disabled):hover {
+  background-color: #00bc8f;
+  color: #000000;
+  font-weight:800;
 }
 
 .isInvalid {
@@ -167,6 +179,21 @@ button {
   margin: 0;
 }
 
+.arrow {
+  position: relative;
+  bottom: 0px;
+  left: 580px;
+    > a img {
+    margin-top: -70px;
+    padding-bottom: 43px;
+    padding-right: 130px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1200px) {
+.arrow {
+  left: 380px;}}
+
 @media (max-width: 720px) {
   .invalidText {
     width: 400px+50px;
@@ -186,6 +213,9 @@ button {
     width: 300px;
     height: 88px;
   }
+
+  .arrow {
+    left: 280px;}
 }
 
 @media (max-width: 500px) {
@@ -203,26 +233,25 @@ button {
     max-width: 250px;
     min-width: 250px;
   }
-}
+  .arrow {
+    display: none;
+}}
 
-.successBackground{
-}
-
-.sendmailDiv{
+.sendmailDiv {
   background-color: #000000;
-display: none;
-max-height:63px
+  display: none;
+  max-height: 63px;
 }
-.sendmailDiv.success{
-display: block;
-max-height:63px
+.sendmailDiv.success {
+  display: block;
+  max-height: 63px;
 }
 
-button.success{
+button.success {
   display: none;
 }
 
-h4{
+h4 {
   padding: 20px 0px 20px 6px;
   font-family: Overpass;
   font-size: 32px;
@@ -230,5 +259,6 @@ h4{
   line-height: 38.4px;
   text-align: center;
   color: #00bc8f;
-  margin:0;
+  margin: 0;
 }
+

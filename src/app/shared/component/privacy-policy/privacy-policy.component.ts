@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [SayHiSectionComponent,ContactComponent,TranslateModule],
+  imports: [TranslateModule],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })

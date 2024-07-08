@@ -1,4 +1,8 @@
 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px 100px 30px 100px;
   height: calc(100vh - 170px - 209px);
 }
@@ -24,7 +28,7 @@ p {
   font-size: 23px;
   font-weight: 400;
   line-height: 27.6px;
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {

@@ -23,7 +23,7 @@
           name="name"
           minlength="6"
           type="name"
-          placeholder="Your fore and last name"
+          placeholder="Your first and last name"
           [ngClass]="{
         'isInvalid': name.invalid && (name.dirty || name.touched),
         'isValid': !name.invalid && (name.dirty || name.touched),
@@ -106,6 +106,12 @@
           <div class="successBackground">
             <h4>{{ "CONTACT.INFO" | translate }}</h4>
           </div>
+          
+        </div>
+        <div class="arrow">
+          <a href="#home"
+            ><img src="./../../assets/arrows/arrowTop2.svg" alt=""
+          /></a>
         </div>
       </form>
     </div>
