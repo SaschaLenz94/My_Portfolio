@@ -1,50 +1,50 @@
 {
-    "NAVBAR": {
-        "ABOUT_ME": "About me",
-        "SKILLS": "Skills",
-        "PORTFOLIO": "Portfolio"
-    },
-    "HEADER": {
-        "FIRST": "Developer",
-        "SECOND": "Scroll down"
-    },
-    "ABOUTME": {
-        "FIRST": "ABOUT ME",
-        "SECOND": "I am a frontend developer from Kerpen, Germany. I have experience in developing web applications and browser games.",
-        "THIRD": "My curiosity drives me to get the best results from the projects and to continuously improve my knowledge.",
-        "FOUR": "My precise and calm manner under pressure shows my efficiency in time management to complete projects on time.",
-        "FIVE": "Let's talk."
-    },
-    "MYSKILLS": {
-        "FIRST": "My Skills"
-    },
-    "PORTFOLIO": {
-        "FIRST": "Here is a selection of my projects, feel free to see them in action to see my skills."
-    },
-    "PROJECT1": {
-        "FIRST": "Task manager inspired by the Kanban system. Create and organize tasks with drag and drop features, assign users and categories."
-    },
-    "PROJECT2": {
-        "FIRST": "A simple jump-and-run game with an object-oriented approach. Help Pepe find coins and salsa bottles to fight the killer chicken."
-    },
-    "CONTACT": {
-        "FIRST": "You have a future project?",
-        "SECOND": "Contact me and we can discuss the ideas.",
-        "REQUIRED1": "Please enter your first and last name",
-        "REQUIRED2": "Please enter a valid email address",
-        "REQUIRED3": "Your message needs to be at least 10 characters long",
-        "POLICY1": "I have read the",
-        "POLICY2": "privacy policy",
-        "POLICY3": "and agree to the processing of my data as described.",
-        "REQUIRED4": "Please accept the privacy policy.",
-        "SUBMIT": "Send Mail",
-        "INFO": "Your mail was sent."
-    },
-    "FOOTER": {
-        "FIRST": "Privacy policy",
-        "SECOND": "Imprint"
-    },
-"PRIVACY_POLICY": {
+  "NAVBAR": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio"
+  },
+  "HEADER": {
+    "FIRST": "Developer",
+    "SECOND": "Scroll down"
+  },
+  "ABOUTME": {
+    "FIRST": "ABOUT ME",
+    "SECOND": "I am a frontend developer from Kerpen, Germany. I have experience in developing web applications and browser games.",
+    "THIRD": "My curiosity drives me to get the best results from the projects and to continuously improve my knowledge.",
+    "FOUR": "My precise and calm manner under pressure shows my efficiency in time management to complete projects on time.",
+    "FIVE": "Let's talk."
+  },
+  "MYSKILLS": {
+    "FIRST": "My Skills"
+  },
+  "PORTFOLIO": {
+    "FIRST": "Here is a selection of my projects, feel free to see them in action to see my skills."
+  },
+  "PROJECT1": {
+    "FIRST": "Task manager inspired by the Kanban system. Create and organize tasks with drag and drop features, assign users and categories."
+  },
+  "PROJECT2": {
+    "FIRST": "A simple jump-and-run game with an object-oriented approach. Help Pepe find coins and salsa bottles to fight the killer chicken."
+  },
+  "CONTACT": {
+    "FIRST": "You have a future project?",
+    "SECOND": "Contact me and we can discuss the ideas.",
+    "REQUIRED1": "Please enter your first and last name",
+    "REQUIRED2": "Please enter a valid email address",
+    "REQUIRED3": "Your message needs to be at least 10 characters long",
+    "POLICY1": "I have read the",
+    "POLICY2": "privacy policy",
+    "POLICY3": "and agree to the processing of my data as described.",
+    "REQUIRED4": "Please accept the privacy policy.",
+    "SUBMIT": "Send Mail",
+    "INFO": "Your mail was sent."
+  },
+  "FOOTER": {
+    "FIRST": "Privacy policy",
+    "SECOND": "Imprint"
+  },
+  "PRIVACY_POLICY": {
     "text01": "Privacy Policy",
     "text02": "1. Data Protection at a Glance",
     "text03": "General Notes",
@@ -105,9 +105,10 @@
     "text61": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the site operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line.",
     "text62": "When SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.",
     "text63": "Source:"
-},
-"IMPRINT": {
- "text01":"Imprint",
- "text02":"Contact",
- "text03": "Source:"
-}}
+  },
+  "IMPRINT": {
+    "text01": "Imprint",
+    "text02": "Contact",
+    "text03": "Source:"
+  }
+}

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { SayHiSectionComponent } from '../../../say-hi-section/say-hi-section.component';
-import { ContactComponent } from '../../../contact/contact.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
