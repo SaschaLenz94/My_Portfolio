@@ -19,11 +19,12 @@ import {
   fromBackground,
 } from '../../app/shared/animation';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   animations: [

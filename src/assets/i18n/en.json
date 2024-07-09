@@ -38,7 +38,10 @@
     "POLICY3": "and agree to the processing of my data as described.",
     "REQUIRED4": "Please accept the privacy policy.",
     "SUBMIT": "Send Mail",
-    "INFO": "Your mail was sent."
+    "INFO": "Your mail was sent.",
+    "PLACEHOLDER1": "Your first and last name",
+    "PLACEHOLDER2": "Your email",
+    "PLACEHOLDER3": "Your message"
   },
   "FOOTER": {
     "FIRST": "Privacy policy",

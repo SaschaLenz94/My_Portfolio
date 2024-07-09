@@ -15,10 +15,11 @@ import {
   fromBackground,
 } from '../shared/animation';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,RouterModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
   animations: [

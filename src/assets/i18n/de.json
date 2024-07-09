@@ -38,7 +38,10 @@
     "POLICY3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "REQUIRED4": "Bitte akzeptieren Sie die Datenschutzerklärung.",
     "SUBMIT": "Absenden",
-    "INFO": "Ihre Mail wurde versendet."
+    "INFO": "Ihre Mail wurde versendet.",
+    "PLACEHOLDER1": "Ihren Vor- und Nachname",
+    "PLACEHOLDER2": "Ihre E-Mail",
+    "PLACEHOLDER3": "Ihre Nachricht"
   },
   "FOOTER": {
     "FIRST": "Datenschutzerklärung",

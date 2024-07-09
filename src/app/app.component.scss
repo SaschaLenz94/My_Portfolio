@@ -1,0 +1,26 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  app-navbar {
+    flex: 0 0 auto;
+  }
+  
+  .content-wrap {
+    flex: 1 0 auto;
+    margin-top:50px;
+  }
+  
+  app-footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+  }
+
+
+  @media (max-width: 1000px) {
+  .content-wrap {
+    margin-top:50px;
+  }  }

@@ -23,7 +23,7 @@
           name="name"
           minlength="6"
           type="name"
-          placeholder="Your first and last name"
+          placeholder="{{ 'CONTACT.PLACEHOLDER1' | translate }}"
           [ngClass]="{
         'isInvalid': name.invalid && (name.dirty || name.touched),
         'isValid': !name.invalid && (name.dirty || name.touched),
@@ -39,11 +39,11 @@
           #email="ngModel"
           type="email"
           name="email"
-          placeholder="Your email"
+          placeholder="{{ 'CONTACT.PLACEHOLDER2' | translate }}"
           [ngClass]="{
-        'isInvalid': email.invalid && (email.dirty || email.touched),
-        'isValid': !email.invalid && (email.dirty || email.touched),
-      }"
+    'isInvalid': email.invalid && (email.dirty || email.touched),
+    'isValid': !email.invalid && (email.dirty || email.touched),
+  }"
           required
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
@@ -56,7 +56,7 @@
           type="text"
           name="message"
           minlength="10"
-          placeholder="Your message"
+          placeholder="{{ 'CONTACT.PLACEHOLDER3' | translate }}"
           [ngClass]="{
         'isInvalid': message.invalid && (message.dirty || message.touched),
         'isValid': !message.invalid && (message.dirty || message.touched),
@@ -84,12 +84,13 @@
               {{ "CONTACT.POLICY1" | translate
               }}<a href="privacypolicy">{{ "CONTACT.POLICY2" | translate }}</a>
               {{ "CONTACT.POLICY3" | translate }}
-            </p>
-          </label>
-          @if (privacyPolicy.invalid && (privacyPolicy.dirty ||
-          privacyPolicy.touched)) {
-          <span class="invalidText">{{ "CONTACT.REQUIRED4" | translate }}</span>
-          }
+            </p> </label
+          ><span class="invalidText">
+            @if (privacyPolicy.invalid && (privacyPolicy.dirty ||
+            privacyPolicy.touched)) {
+            {{ "CONTACT.REQUIRED4" | translate }}
+            }
+          </span>
         </div>
         <button
           [ngClass]="{ success: isSubmitted }"
@@ -106,7 +107,6 @@
           <div class="successBackground">
             <h4>{{ "CONTACT.INFO" | translate }}</h4>
           </div>
-          
         </div>
         <div class="arrow">
           <a href="#home"

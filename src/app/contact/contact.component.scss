@@ -25,7 +25,7 @@ p {
   font-family: Overpass;
   font-size: 14px;
   font-weight: 400;
-  line-height: 16.8px;
+
   text-align: left;
 
   a {
@@ -161,7 +161,7 @@ button:not(:disabled):hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 60px;
   width: 100%;
   color: white;
 }
@@ -169,6 +169,7 @@ button:not(:disabled):hover {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -177,6 +178,7 @@ button:not(:disabled):hover {
   min-width: 617px+50px;
   color: red;
   margin: 0;
+  height: 25px;
 }
 
 .arrow {
