@@ -1,14 +1,15 @@
-div {
-  max-width: 1450px;
-  div {
-    padding: 30px 20px 30px 20px;
-  }
-}
-
 .window-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 30px 100px 30px 100px;
 }
+
+.content{
+  max-width: 1450px;
+}
+
 h1 {
   font-family: Syne;
   font-size: 78px;
@@ -57,7 +58,6 @@ a {
   text-wrap: wrap;
 }
 
-
 @media (max-width: 1200px) {
   h1 {
     font-size: 58px;
@@ -74,8 +74,9 @@ a {
   h1 {
     font-size: 38px;
   }
-
-}
+  .window-center {
+  padding: 30px 20px 30px 20px;
+}}
 
 @media (max-width: 460px) {
   h1 {

@@ -97,7 +97,7 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 6);
+      }, 12);
     });
   }
 
@@ -109,7 +109,7 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 12);
+      }, 14);
     });
   }
 
@@ -121,7 +121,7 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 18);
+      }, 16);
     });
   }
 }

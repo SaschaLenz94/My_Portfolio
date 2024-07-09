@@ -89,7 +89,11 @@ p {
   line-height: 16.8px;
   text-align: left;
 }
+span {
+  color: #fffcf3;
+}
 
+@media (min-width: 930px) {
 .underline-link:hover {
   color: #00bc8f;
 }
@@ -110,11 +114,8 @@ p {
 
 .underline-link:hover:after {
   width: 50%;
-}
+}}
 
-span {
-  color: #fffcf3;
-}
 
 @media (max-width: 830px) {
   p {
