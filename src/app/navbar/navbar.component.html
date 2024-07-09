@@ -4,27 +4,30 @@
 </div>
 <div class="window-center">
   <div class="content">
-    <div class="logo">
-      <a href="https://www.sascha-lenz.org"><img src="./../../assets/logo_sascha_lenz.png" /></a>
+    <div  id="home" class="logo">
+      <a routerLink="['/']" href="https://www.sascha-lenz.org"><img src="./../../assets/logo_sascha_lenz.png" /></a>
     </div>
-    <nav id="home">
+    <nav>
       <div class="menuDiv">
         <a
           [@slideInFromBottom]="slideInBottom"
           class="underline-link"
-          href="#aboutMe"
+          routerLink="/"
+          (click)="navigateToAboutMe($event)"
           >{{ "NAVBAR.ABOUT_ME" | translate }}</a
         >
         <a
           [@slideInFromBottomTwo]="slideInFromBottomTwo"
           class="underline-link"
-          href="#mySkills"
+          routerLink="/"
+          (click)="navigateToMySkills($event)"
           >{{ "NAVBAR.SKILLS" | translate }}</a
         >
         <a
           [@slideInFromBottomThree]="slideInFromBottomThree"
           class="underline-link"
-          href="#portfolio"
+          routerLink="/"
+          (click)="navigateToPortfolio($event)"
           >{{ "NAVBAR.PORTFOLIO" | translate }}</a
         >
       </div>

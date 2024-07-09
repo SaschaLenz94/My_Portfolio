@@ -30,10 +30,10 @@
       }"
           pattern="^[a-zA-Z]+ [a-zA-Z]+$"
           required
-        />
+        /><span class="invalidText">
         @if(!name.valid && name.touched){
-        <span class="invalidText">{{ "CONTACT.REQUIRED1" | translate }}</span>
-        }
+        {{ "CONTACT.REQUIRED1" | translate }}
+        }</span>
         <input
           [(ngModel)]="contactData.email"
           #email="ngModel"
@@ -46,10 +46,10 @@
   }"
           required
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-        />
+        /> <span class="invalidText">
         @if(!email.valid && email.touched){
-        <span class="invalidText">{{ "CONTACT.REQUIRED2" | translate }}</span>
-        }
+       {{ "CONTACT.REQUIRED2" | translate }}
+        }</span>
         <textarea
           [(ngModel)]="contactData.message"
           #message="ngModel"
@@ -62,10 +62,10 @@
         'isValid': !message.invalid && (message.dirty || message.touched),
       }"
           required
-        ></textarea>
+        ></textarea><span class="invalidText">
         @if(!message.valid && message.touched){
-        <span class="invalidText">{{ "CONTACT.REQUIRED3" | translate }}</span>
-        }
+        {{ "CONTACT.REQUIRED3" | translate }}
+        }</span>
         <div class="policy-container">
           <label class="container">
             <input
@@ -82,7 +82,7 @@
             />
             <p>
               {{ "CONTACT.POLICY1" | translate
-              }}<a href="privacypolicy">{{ "CONTACT.POLICY2" | translate }}</a>
+              }}<a routerLink="privacypolicy" (click)="scrollToTop()">{{ "CONTACT.POLICY2" | translate }}</a>
               {{ "CONTACT.POLICY3" | translate }}
             </p> </label
           ><span class="invalidText">

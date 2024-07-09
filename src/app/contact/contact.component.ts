@@ -1,17 +1,28 @@
 import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, TranslateModule],
+  imports: [FormsModule, NgClass, TranslateModule,RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+
+  ngOnInit(): void {
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+
   http = inject(HttpClient);
 
   contactData = {

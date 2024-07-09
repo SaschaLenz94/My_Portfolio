@@ -65,7 +65,7 @@ nav {
   display: inline-block;
   position: relative;
   color: black;
-  margin: 15px;
+  margin: 8px;
   font-family: Overpass;
   font-size: 22px;
   font-weight: 600;
@@ -97,11 +97,11 @@ nav {
 }
 
 .menu-container {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: calc(100px); /* Direkt unterhalb des Burger-Menü-Buttons */
+  top: calc(45px); /* Direkt unterhalb des Burger-Menü-Buttons */
   right: 0;
   transform-origin: top right; /* Ursprung für die Transformation */
   transform: scaleY(0); /* Skalierung auf 0 in der Y-Achse für Animation */
@@ -152,8 +152,11 @@ nav {
 @media (max-width: 1000px) {
   .burger-menu {
     display: block;
+    position: absolute;
+    top:15px;
+    right:15px
   }
-  .menuDiv {
+  nav {
     display: none;
   }
 

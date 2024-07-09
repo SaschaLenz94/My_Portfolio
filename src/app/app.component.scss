@@ -11,7 +11,9 @@
   
   .content-wrap {
     flex: 1 0 auto;
-    margin-top:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   
   app-footer {
@@ -20,7 +22,3 @@
   }
 
 
-  @media (max-width: 1000px) {
-  .content-wrap {
-    margin-top:50px;
-  }  }

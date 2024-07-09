@@ -19,12 +19,12 @@ import {
   fromBackground,
 } from '../../app/shared/animation';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TranslateModule,RouterModule],
+  imports: [TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   animations: [
@@ -53,7 +53,8 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
     private el: ElementRef,
     private viewportService: ViewportService,
     private cdr: ChangeDetectorRef,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private router: Router
   ) {}
 
   ngAfterViewInit() {
@@ -86,5 +87,41 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  navigateToAboutMe(event: Event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('aboutMe');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 6);
+    });
+  }
+
+  navigateToMySkills(event: Event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('mySkills');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 12);
+    });
+  }
+
+  navigateToPortfolio(event: Event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('portfolio');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 18);
+    });
   }
 }
